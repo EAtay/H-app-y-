@@ -1,0 +1,39 @@
+.main__section {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left__part{
+    height: 354px;
+width: 420px;
+left: 78px;
+top: 45.234375px;
+border-radius: 0px;
+margin: 100px;
+}
+.logo{
+    height: 64px;
+    width: 192px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+.section__title{
+height: 120px;
+width: 400px;
+font-size: 54px;
+font-weight: 400;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: left;
+}
+.section__text{
+    padding-top: 12px;
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
