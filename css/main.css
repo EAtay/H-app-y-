@@ -2,6 +2,7 @@
     max-width: 1440px;
     background: url(/img/bg.png);
     min-height: 436px;
+    padding-top: 90px;
 }
 .main p{
     font-family: 'Poppins';

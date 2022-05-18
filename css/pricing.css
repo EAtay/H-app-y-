@@ -1,0 +1,104 @@
+.pricing__section {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing__top {
+    padding-top: 100px;
+
+}
+
+.pricing__title {
+    height: 36px;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.pricing__context {
+    padding-top: 14px;
+    width: 568px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.card__pricing {
+    height: 338px;
+    width: 1168px;
+    left: 16px;
+    top: 164px;
+    border-radius: 0px;
+    padding-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__card {
+    height: 338px;
+    width: 379px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.name__card {
+    width: 85px;
+    height: 24px;
+    top: 49px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.price {
+    font-size: 108px;
+    font-weight: 400;
+    line-height: 124px;
+    letter-spacing: 8px;
+}
+
+.text__card {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card__btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    height: 40px;
+    width: 129px;
+    border-radius: 4px;
+    color: #F2F2F2;
+    text-transform: uppercase;
+}
+
+.standard {
+    background-color: #0278ED;
+}
+
+.premiun {
+    background-color: #FF5437;
+}
+
+.lifetime {
+    background-color: #FF9209;
+}

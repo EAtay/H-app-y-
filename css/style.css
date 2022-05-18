@@ -4,6 +4,13 @@
 @import url(./about.css);
 @import url(./feature.css);
 @import url(./redcontainer.css);
+@import url(./technology.css);
+@import url(./change.css);
+@import url(./pricing.css);
+@import url(./testimonials.css);
+@import url(./download.css);
+@import url(./faq.css);
+@import url(./footer.css);
 *{
  margin: 0;
  padding:0;   

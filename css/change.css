@@ -1,0 +1,88 @@
+.mode__section{
+    background-color: #222222;
+    display: flex;
+    color: #fff;
+    padding: 100px 0;
+    justify-content: center;
+}
+
+.card__frame{
+    text-align: center;
+    top: 0;
+}
+.text__frame{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+}
+.title__frame{
+font-weight: 400;
+font-size: 32px;
+}
+
+.title__frame b{
+    color: #FF9209;
+}
+
+.context__frame{
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+width: 578px;
+height: 48px;
+}
+
+.img__frame{
+    height: 100%;
+    width: 400px;
+    bottom: 0;
+}
+.img__bottom{
+    padding-top: 36px;
+    height: 486px;
+    width: 600px;
+    border-bottom: 2px solid #E5E5E5;
+}
+.btn__frame{
+    padding-top: 36px;
+    width: 600px;
+}
+.btn__frame span{
+    display: block;
+}
+.light__btn{
+height: 49px;
+background: none;
+width: 128px;
+left: 165px;
+border-radius: 5px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.dark__btn{
+background: none;
+height: 49px;
+width: 123px;
+left: 313px;
+border-radius: 5px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #FF9209;
+}
+
