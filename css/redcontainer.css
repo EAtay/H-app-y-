@@ -1,0 +1,33 @@
+.red__section{
+    width: 100%;
+    background-color: #FF5437;
+    padding: 100px 0;
+}
+.red__container{
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.static{    
+    text-align: center;
+    color: #fff;
+}
+.static h3{
+    font-family: Poppins;
+font-size: 96px;
+font-weight: 400;
+line-height: 96px;
+letter-spacing: 0em;
+text-align: center;
+}
+.static__context{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+width: 217px;   
+line-height: 20px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
