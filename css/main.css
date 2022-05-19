@@ -1,6 +1,8 @@
 .main{
     max-width: 1440px;
     background: url(/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 436px;
     padding-top: 90px;
 }

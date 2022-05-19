@@ -11,16 +11,19 @@
     display: flex;
     padding-top: 40px;
     margin-bottom: 100px;
-    height: 224px;
-    width: 1168px;
+    height: auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
     justify-content: space-between;
-
 }
 .testimonials__card{
     height: 224px;
     width: 379px;
     background: #FFFFFF;
     border-radius: 20px;
+}
+.testimonials__card:nth-child(2n){
+    margin: 0 20px;
 }
 
 .text__cards{
