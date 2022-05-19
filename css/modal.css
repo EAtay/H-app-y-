@@ -1,0 +1,167 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+.modal__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.modal__content {
+    padding: 0 90px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.modal__title {
+    height: 60px;
+    max-width: 312px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 38px;
+}
+
+.modal__inputs {
+    padding-top: 25px;
+    height: auto;
+    width: 330px;
+}
+
+.modal__input {
+    height: 42px;
+    width: 330px;
+    border-radius: 4px;
+    background: #F2F2F2;
+    color: #000;
+    padding-left: 17px;
+    border: none;
+    margin-top: 17px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.modal__input:focus{
+    outline: 2px solid #5AB0FF;
+}
+.modal__inputs[data-error] .modal__input{
+    border-color: #FF5437;
+
+}
+.modal__inputs[data-error]::after{
+    content: attr(data-error);
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+    color: #FF5437;    
+}
+.modal__btns{
+width: 330px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 23px;
+}
+.btn__title{
+height: 24px;
+width: 85px;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+}
+
+
+.modal__btn{
+height: 42px;
+width: 100%;
+left: 559px;
+top: 453px;
+margin-top: 11px;
+border-radius: 4px;
+background: none;
+border: 1px solid;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+flex-wrap: wrap;
+
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+}
+.select__svg{
+    height: 24px;
+    width: 24px;
+
+}
+.blue__btn{
+    color: #0278ED;
+
+}
+.red__btn{
+    color: #FF5437;
+}
+.orange__btn{
+    background-color: #FF9209;
+    color: #fff;
+}
+
+.modal__ask{
+    padding-top: 42px;
+    height: 24px;
+    width: 273px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.modal__question{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+.modal__networks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 141px;
+    width: 127px;
+    margin-top: 23px;
+}
+.checkbox__container{
+    height: 24px;
+width: 100%;
+}
+.modal__send{
+height: 40px;
+width: 172px;
+border-radius: 4px;
+background: #222222;
+color: #fff;
+font-family: 'Poppins';
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
