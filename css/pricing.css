@@ -91,7 +91,16 @@ margin: 0 40px;
     color: #F2F2F2;
     text-transform: uppercase;
 }
+.card__btn:hover{
+opacity: 0.9;   
+}
+.card__btn:active {
+    transform: scale(0.98);
+}
 
+.card__btn:focus {
+    outline: 2px solid #5AB0FF;
+}
 .standard {
     background-color: #0278ED;
 }

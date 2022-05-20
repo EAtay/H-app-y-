@@ -1,5 +1,6 @@
 .faq{
     background-color: #E5E5E5;
+    width: 100%;
     display: flex;
     justify-content: left;
     text-align: left;
@@ -10,7 +11,10 @@
     color: #222222;
 }
 .top__faq{
-height: auto;
+    width: 1200px;
+    text-align: left;
+    margin: auto;
+    height: auto;
 }
 
 .name__section{
@@ -24,13 +28,14 @@ line-height: 36px;
     padding-top: 13px;
 }
 .faq__questions{
+    margin: auto;
     max-width: 1200px;
-    justify-content: space-between;
     margin-top: 42px;
     display: flex;
     flex-wrap: wrap;
 }
 .questions__card{
+    max-width: 600px;
     margin: 22px 0;
 }
 

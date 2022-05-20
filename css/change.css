@@ -5,7 +5,6 @@
     padding: 100px 0;
     justify-content: center;
 }
-
 .card__frame{
     text-align: center;
     top: 0;
@@ -68,6 +67,7 @@ text-align: center;
 letter-spacing: 2px;
 text-transform: uppercase;
 color: #FFFFFF;
+fill: #fff;
 }
 
 .dark__btn{
@@ -84,5 +84,20 @@ text-align: center;
 letter-spacing: 2px;
 text-transform: uppercase;
 color: #FF9209;
+fill: #FF9209;
 }
 
+
+/* Ligth mode */
+._light{
+    background-color: #fff;
+    color: #222222;
+}
+.l_mode_btn{
+color: #222222;
+fill: #222222;
+}
+.d_mode_btn{
+    fill: #FF9209;
+    color: #FF9209;
+}
