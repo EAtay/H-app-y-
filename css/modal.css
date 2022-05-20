@@ -1,4 +1,5 @@
 .modal {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -13,10 +14,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
 }
 
 .modal__content {
+    height: auto;
     padding: 0 90px;
     border-radius: 4px;
     background-color: #fff;
@@ -34,10 +35,10 @@
     font-weight: 400;
     line-height: 30px;
     padding-top: 38px;
+    padding-bottom: 25px;
 }
 
 .modal__inputs {
-    padding-top: 25px;
     height: auto;
     width: 330px;
 }
@@ -80,40 +81,36 @@ width: 330px;
     padding-top: 23px;
 }
 .btn__title{
-height: 24px;
-width: 85px;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
-text-align: left;
 }
-
-
 .modal__btn{
 height: 42px;
 width: 100%;
-left: 559px;
-top: 453px;
 margin-top: 11px;
 border-radius: 4px;
 background: none;
 border: 1px solid;
 display: flex;
-justify-content: space-between;
 align-items: center;
-text-align: center;
-flex-wrap: wrap;
-
+justify-content: space-around;
 font-family: Poppins;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
-letter-spacing: 0px;
 }
 .select__svg{
-    height: 24px;
-    width: 24px;
-
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.select__svg svg{
+    position: absolute;
+    left: 0;
 }
 .blue__btn{
     color: #0278ED;
@@ -126,11 +123,8 @@ letter-spacing: 0px;
     background-color: #FF9209;
     color: #fff;
 }
-
 .modal__ask{
     padding-top: 42px;
-    height: 24px;
-    width: 273px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -139,20 +133,19 @@ letter-spacing: 0px;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
+padding-bottom: 23px;
 }
 .modal__networks{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 141px;
-    width: 127px;
-    margin-top: 23px;
 }
 .checkbox__container{
-    height: 24px;
-width: 100%;
+padding: 7.5px 0;
 }
+
 .modal__send{
+margin: 42px 0 33px 0;
 height: 40px;
 width: 172px;
 border-radius: 4px;
@@ -164,4 +157,39 @@ font-size: 14px;
 line-height: 18px;
 letter-spacing: 2px;
 text-transform: uppercase;
+}
+.load__content{
+    display: none;
+}
+.closed__content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7E7E7E;
+    margin-bottom: 36px;
+}
+.buy__content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7E7E7E;
+    margin-bottom: 36px;
+}
+@keyframes moving {
+    100% {transform: rotate(-360deg);}
+}
+.load__svg {
+    animation: moving 2.5s .5s linear;
 }

@@ -27,32 +27,21 @@ a {
 
 .logo {
     width: 100%;
-    height: 100%;
-    padding: 25px 25px 25px 32px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-
-.logo {
-    height: 40px;
-    width: 120px;
-}
-
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .navbar ul {
+    display: flex;
     width: 439px;
     align-items: center;
     justify-content: space-around;
     padding: 13px 5px 13px 18px;
-    display: flex;
 }
-
 .navbar li {
     list-style: none;
     font-family: 'Poppins';
@@ -61,11 +50,9 @@ a {
     line-height: 24px;
     color: #666666;
 }
-
 button {
     border: none;
 }
-
 .header__btn {
     height: 40px;
     width: 172px;
@@ -74,7 +61,6 @@ button {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -99,6 +85,12 @@ button {
 .logo__nav {
     display: none;
 }
+.burger__btn{
+    display: none;
+}
+.btn__scroll{
+    color: #FFFFFF;
+}
 
 @media(max-width: 767px) {
     .container__header {
@@ -117,6 +109,17 @@ button {
         width: 30px;
         height: 18px;
         cursor: pointer;
+    }
+    .burger__btn{
+        display: block;
+    }
+    .burger__btn:hover{
+        padding: 15px;
+        border-radius: 50%;
+        background-color: #E5E5E5;
+    }
+    .burger__btn:focus {
+        outline: 2px solid #5AB0FF;
     }
     .menu__icon span,
     .menu__icon::before,
@@ -180,12 +183,5 @@ button {
         flex-direction: column;
         margin: 39px 0;
         height: auto;
-    }
-    .menu__item {
-        display: flex;
-        margin: 18px;
-        font-size: 20 px;
-        font-weight: 400;
-        line-height: 24px;
     }
 }

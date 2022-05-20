@@ -68,10 +68,16 @@
                     <li><a data-goto=".testimonials__section" href="#" class="menu__item">Testimonials</a></li>
                     <li><a data-goto=".faq" href="#" class="menu__item">FAQ</a> </li>
                 </ul>
-                <button class="header__btn">Get this app</button>
+                    <button class="header__btn">
+                <a data-goto=".dowload" href="#" class="btn__scroll">
+                        Get this app
+                    </a>
+                    </button>
             </nav>
-            <div class="menu__icon">
-                <span></span>
+            <div class="burger__btn">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
             </div>
     </header>
     <div class="main">
@@ -385,19 +391,19 @@
                 <p class="name__card blue">Standard</p>
                 <h3 class="price blue">$9</h3>
                 <p class="text__card">monthly</p>
-                <button class="standard card__btn">buy now</button>
+                <button class="card__btn standard">buy now</button>
             </div>
             <div class="price__card">
                 <p class="name__card red">Premium</p>
                 <h3 class="price red">$99</h3>
                 <p class="text__card">annualy</p>
-                <button class="premiun card__btn">buy now</button>
+                <button class="card__btn premium">buy now</button>
             </div>
             <div class="price__card">
                 <p class="name__card orange">Lifetime</p>
                 <h3 class="price orange">$149</h3>
                 <p class="text__card">up front</p>
-                <button class="lifetime card__btn">buy now</button>
+                <button class="card__btn lifetime">buy now</button>
             </div>
         </div>
     </section>
@@ -460,6 +466,7 @@
         <p class="download__context">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis
             risus egestas non.</p>
         <button class="btn__dowload">
+            <a href="https://www.apple.com/ru/app-store/" target="_blank">
             <svg width="180" height="60" viewBox="0 0 180 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_297)">
                     <path
@@ -542,7 +549,7 @@
                     </clipPath>
                 </defs>
             </svg>
-
+        </a>
         </button>
     </section>
     <section class="faq">
@@ -623,7 +630,7 @@
         </div>
 
     </footer>
-    <!-- <div class="modal">
+    <div class="modal">
         <div class="modal__body">
             <div class="modal__content">
                 <div class="modal__title">
@@ -632,7 +639,7 @@
                     </p>
                 </div>
                 <div class="modal__inputs" data-error="this field is reqiured*">
-                    <input type="text" class="modal__input" value="123cc" id="name" name="firstname" placeholder="Atay Estebessov">
+                    <input type="text" class="modal__input" id="name" name="firstname" placeholder="Atay Estebessov">
                 </div>
                 <div class="modal__inputs" data-error="this field is reqiured*">
                     <input type="text" class="modal__input" id="mail" placeholder="email">
@@ -645,13 +652,13 @@
                     <button class="modal__btn red__btn">Premium</button>
                     <button class="modal__btn orange__btn">
                         <div class="select__svg">
-                            <span> Lifetime</span>
                             <svg width="24" class="svg__fix" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="select"
                                     d="M8.81798 19.7789L2.45398 13.4149L5.28398 10.5849L8.81798 14.1289L18.716 4.22095L21.546 7.05095L8.81798 19.7789Z"
                                     fill="white" />
                             </svg>
+                            <span> Lifetime</span>
                         </div>
                     </button>
                 </div>
@@ -675,26 +682,24 @@
                             <label for="checkbox__other">Other</label>
                         </div>
                     </div>
-                    <button class="modal__send">send</button>
+                        <button class="modal__send">send</button>
+                        <div class="load__content">
+                            <svg class="load__svg" width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 18H12V15C12 13.9 11.6083 12.9583 10.825 12.175C10.0417 11.3917 9.1 11 8 11C6.9 11 5.95833 11.3917 5.175 12.175C4.39167 12.9583 4 13.9 4 15V18ZM15 20H1C0.716667 20 0.479 19.904 0.287 19.712C0.0956668 19.5207 0 19.2833 0 19C0 18.7167 0.0956668 18.4793 0.287 18.288C0.479 18.096 0.716667 18 1 18H2V15C2 13.9833 2.23767 13.029 2.713 12.137C3.18767 11.2457 3.85 10.5333 4.7 10C3.85 9.46667 3.18767 8.754 2.713 7.862C2.23767 6.97067 2 6.01667 2 5V2H1C0.716667 2 0.479 1.904 0.287 1.712C0.0956668 1.52067 0 1.28333 0 1C0 0.716667 0.0956668 0.479 0.287 0.287C0.479 0.0956666 0.716667 0 1 0H15C15.2833 0 15.5207 0.0956666 15.712 0.287C15.904 0.479 16 0.716667 16 1C16 1.28333 15.904 1.52067 15.712 1.712C15.5207 1.904 15.2833 2 15 2H14V5C14 6.01667 13.7627 6.97067 13.288 7.862C12.8127 8.754 12.15 9.46667 11.3 10C12.15 10.5333 12.8127 11.2457 13.288 12.137C13.7627 13.029 14 13.9833 14 15V18H15C15.2833 18 15.5207 18.096 15.712 18.288C15.904 18.4793 16 18.7167 16 19C16 19.2833 15.904 19.5207 15.712 19.712C15.5207 19.904 15.2833 20 15 20Z"
+                                    fill="#7E7E7E" />
+                            </svg>
+                            <p class="load__text">loading...</p>
+                        </div>
+                        <div class="buy__content">
+                            <p>done</p>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="load__modal">
-        <div class="modal__body">
-            <button class="modal__send">send</button>
-            <div class="load__content">
-                <svg class="load__svg" width="16" height="20" viewBox="0 0 16 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M4 18H12V15C12 13.9 11.6083 12.9583 10.825 12.175C10.0417 11.3917 9.1 11 8 11C6.9 11 5.95833 11.3917 5.175 12.175C4.39167 12.9583 4 13.9 4 15V18ZM15 20H1C0.716667 20 0.479 19.904 0.287 19.712C0.0956668 19.5207 0 19.2833 0 19C0 18.7167 0.0956668 18.4793 0.287 18.288C0.479 18.096 0.716667 18 1 18H2V15C2 13.9833 2.23767 13.029 2.713 12.137C3.18767 11.2457 3.85 10.5333 4.7 10C3.85 9.46667 3.18767 8.754 2.713 7.862C2.23767 6.97067 2 6.01667 2 5V2H1C0.716667 2 0.479 1.904 0.287 1.712C0.0956668 1.52067 0 1.28333 0 1C0 0.716667 0.0956668 0.479 0.287 0.287C0.479 0.0956666 0.716667 0 1 0H15C15.2833 0 15.5207 0.0956666 15.712 0.287C15.904 0.479 16 0.716667 16 1C16 1.28333 15.904 1.52067 15.712 1.712C15.5207 1.904 15.2833 2 15 2H14V5C14 6.01667 13.7627 6.97067 13.288 7.862C12.8127 8.754 12.15 9.46667 11.3 10C12.15 10.5333 12.8127 11.2457 13.288 12.137C13.7627 13.029 14 13.9833 14 15V18H15C15.2833 18 15.5207 18.096 15.712 18.288C15.904 18.4793 16 18.7167 16 19C16 19.2833 15.904 19.5207 15.712 19.712C15.5207 19.904 15.2833 20 15 20Z"
-                        fill="#7E7E7E" />
-                </svg>
-                <p class="load__text">loading...</p>
-            </div>
-        </div>
-    </div>  -->
-    <script src="./js/script.js" type="module"/>
+    <script src="./js/script.js" type="module"></script>
 </body>
 
 </html>
