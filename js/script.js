@@ -1,6 +1,8 @@
-import { myFunction } from "./burger";
-myFunction()
-import { light } from "./mode"; 
-light()
-import { modal } from "./modal";
-modal()
+import burger from "./burger.js"
+import changeTheme from "./mode.js"
+import openModal from "./modal.js"
+import timer from "./timer.js"
+openModal()
+burger()
+changeTheme()
+timer()

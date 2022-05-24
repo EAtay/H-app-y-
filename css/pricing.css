@@ -101,14 +101,14 @@ opacity: 0.9;
 .card__btn:focus {
     outline: 2px solid #5AB0FF;
 }
-.standard {
+.standard__btn {
     background-color: #0278ED;
 }
 
-.premium {
+.premium__btn {
     background-color: #FF5437;
 }
 
-.lifetime {
+.lifetime__btn {
     background-color: #FF9209;
 }

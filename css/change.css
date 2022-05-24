@@ -1,5 +1,6 @@
 .mode__section{
     background-color: #222222;
+    transition: .3s;
     display: flex;
     color: #fff;
     padding: 100px 0;
@@ -89,13 +90,16 @@ fill: #FF9209;
 
 
 /* Ligth mode */
-._light{
+.light-theme{
     background-color: #fff;
+    transition: .3s;
+}
+.changeTheme__title{
     color: #222222;
 }
 .l_mode_btn{
-color: #222222;
-fill: #222222;
+    color: #222222;
+    fill: #222222;
 }
 .d_mode_btn{
     fill: #FF9209;

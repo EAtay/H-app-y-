@@ -1,26 +1,30 @@
-export
-const lightMode = document.querySelector('.light__btn');
-const section = document.querySelector('.mode__section');
-const textMode = document.querySelector('.text__frame');
-const textLight = document.querySelector('.light__btn');
-const textDark = document.querySelector('.dark__btn');
-const light = document.getElementById('textMode');
-if(lightMode){
-    lightMode.addEventListener("click", function(e){
-    section.classList.toggle('_light');
-    textMode.classList.toggle('_light');
-    textLight.classList.toggle('d_mode_btn');
-    textDark.classList.toggle('l_mode_btn')
-    light.innerHTML = "light";
-    })
-}
-const darkMode = document.querySelector('.dark__btn');
-if(darkMode){
-    darkMode.addEventListener("click", function(e){
-        section.classList.remove('_light');
-    textMode.classList.remove('_light');
-    textLight.classList.remove('d_mode_btn');
-    textDark.classList.remove('l_mode_btn')
-    light.innerHTML = "dark";
-    })
+export default function changeTheme() {
+  const lightModeOn = document.querySelector(".light__btn");
+  const darkModeOn = document.querySelector(".dark__btn");
+  const section = document.querySelector(".mode__section");
+  const textMode = document.querySelector(".text__frame");
+  const themeName = document.querySelector(".theme-name");
+  const textLight = document.querySelector(".light__btn");
+  const textDark = document.querySelector(".dark__btn");
+  const boldTitleChange = document.getElementById("bold-title");
+
+  lightModeOn.addEventListener("click", function (e) {
+    section.classList.add("light-theme");
+    section.classList.add('changeTheme__title')
+    themeName.innerHTML = "light";
+    textMode.classList.add("changeTheme__title");
+    textLight.classList.add("d_mode_btn");
+    textDark.classList.add("l_mode_btn");
+    boldTitleChange.innerHTML = "light";
+  });
+
+  darkModeOn.addEventListener("click", function (e) {
+    section.classList.remove("light-theme");
+    themeName.innerHTML = "dark";
+    section.classList.remove('changeTheme__title')
+    textMode.classList.remove("changeTheme__title");
+    textLight.classList.remove("d_mode_btn");
+    textDark.classList.remove("l_mode_btn");
+    boldTitleChange.innerHTML = "dark";
+  });
 }

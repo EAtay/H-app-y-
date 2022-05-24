@@ -101,7 +101,7 @@ font-weight: 400;
 line-height: 24px;
 }
 .select__svg{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     width: 90%;
     justify-content: center;
@@ -112,16 +112,21 @@ line-height: 24px;
     position: absolute;
     left: 0;
 }
+.standard{
+    background-color: #0278ED;
+}
+.premium{
+    background-color: #FF5437;
+}
+.lifetime{
+    background-color: #ff9209;
+    color: #fff;
+}
 .blue__btn{
-    color: #0278ED;
-
+    color: #0278ED; 
 }
 .red__btn{
     color: #FF5437;
-}
-.orange__btn{
-    background-color: #FF9209;
-    color: #fff;
 }
 .modal__ask{
     padding-top: 42px;
@@ -138,6 +143,7 @@ padding-bottom: 23px;
 .modal__networks{
     display: flex;
     flex-wrap: wrap;
+    text-align: left;
     flex-direction: column;
 }
 .checkbox__container{
@@ -175,17 +181,23 @@ text-transform: uppercase;
     margin-bottom: 36px;
 }
 .buy__content{
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     width: 45%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin-bottom: 36px;
+}
+.done__btn{
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
+    justify-content: center;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #7E7E7E;
-    margin-bottom: 36px;
+    width: 100%;
+    border-radius: 4px;
+    background: none;
 }
 @keyframes moving {
     100% {transform: rotate(-360deg);}
@@ -193,3 +205,32 @@ text-transform: uppercase;
 .load__svg {
     animation: moving 2.5s .5s linear;
 }
+.checkbox__input{
+    position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox__input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .checkbox__input+label::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #0278ED;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90% 90%;
+  }
+  .checkbox__input:checked+label::before {
+      display: flex;
+      justify-content: center;
+    border-color: #0b76ef;
+    background-image: url("/img/select_blue.png");
+  }
