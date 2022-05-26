@@ -6,22 +6,7 @@
     padding-top: 100px;
     background-color: #fff;
 }
-
-.title__of__section{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-
-letter-spacing: 2px;
-text-transform: uppercase;
-
-color: #222222;
-}
-
 .title__of__context{
-    font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 32px;
@@ -30,8 +15,7 @@ color: #222222;
 }
 
 .section__text{
-    font-family: 'Poppins';
-font-style: normal;
+    font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;

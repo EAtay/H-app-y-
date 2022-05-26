@@ -1,5 +1,5 @@
 export default function timer() {
-  const dataEnd = new Date("2022-05-24 16:40");
+  const dataEnd = new Date("2022-06-25 19:00");
   const timerDelete = document.getElementById("timer");
 
   const interfal = setInterval(countDown, 1000);
@@ -14,11 +14,11 @@ export default function timer() {
     const seconds = Math.floor((timeDistance % (1000 * 60)) / 1000);
 
     document.querySelector("#days").innerHTML =
-      String(days).padStart(2, 0) + " |";
+      String(days).padStart(2, 0);
     document.querySelector("#hours").innerHTML =
-      String(hours).padStart(2, 0) + " |";
+      String(hours).padStart(2, 0);
     document.querySelector("#minutes").innerHTML =
-      String(minutes).padStart(2, 0) + " |";
+      String(minutes).padStart(2, 0);
     document.querySelector("#seconds").innerHTML = String(seconds).padStart(
       2,
       0
