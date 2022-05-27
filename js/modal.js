@@ -29,8 +29,11 @@ export default function openModal() {
   const inputEmail = document.querySelector(".modal_email");
   sendBtn.addEventListener("click", function (e) {
     const checked_btn = document.querySelector('input[name = "drone"]:checked');
+    const ss = document.getElementById('checkbox__facebook');
+    if(ss && ss.value){
+      console.log("input");
+      }
     close.classList.add("hidden__modal__content");
-
     console.log("Plan: " + checked_btn.value);
     setTimeout(() => {
       sendBtn.setAttribute("disabled", "");
