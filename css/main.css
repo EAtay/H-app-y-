@@ -61,3 +61,48 @@
   font-weight: 700;
   font-size: 24px;
 }
+
+@media(max-width: 709px) {
+  .p__title {
+    font-size: 40px;
+  }
+  
+  .p__context {
+    font-size: 30px;
+  }
+  .number{
+    font-size: 70px;
+  }
+  .timer__line {
+    font-size: 70px;
+  }
+  
+  .timer-text {
+    font-size: 20px;
+  }
+  .main__time {
+    width: 100%;
+  }
+}
+@media(max-width: 456px) {
+  .p__title {
+    font-size: 30px;
+  }
+  
+  .p__context {
+    font-size: 20px;
+  }
+  .number{
+    font-size: 60px;
+  }
+  .timer__line {
+    font-size: 60px;
+  }
+  
+  .timer-text {
+    font-size: 15px;
+  }
+  .main__time {
+    width: 100%;
+  }
+}

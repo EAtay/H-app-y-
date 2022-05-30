@@ -98,12 +98,15 @@ a {
 
     .burger__btn {
         display: block;
+        border-radius: 50%;
+        padding: 16px;
+        background-color: #ffffff;
     }
 
     .burger__btn:hover {
         padding: 16px;
         border-radius: 50%;
-        background-color: #E5E5E5;
+        background-color: #a5a5a5;
     }
 
     .burger__btn:focus {
@@ -183,5 +186,14 @@ a {
         flex-direction: column;
         margin: 38px 0;
         height: auto;
+    }
+}
+
+
+
+
+@media(max-width: 761px) {
+    .container {
+        justify-content: space-between; 
     }
 }

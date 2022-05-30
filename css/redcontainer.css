@@ -1,30 +1,46 @@
-#red__section{
+#red__section {
     width: 100%;
     background-color: #FF5437;
     padding: 100px 0;
     display: flex;
     flex-direction: wrap;
 }
-.red__container{
+
+.red__container {
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: center;
 }
-.static{    
+
+.static {
     text-align: center;
     color: #fff;
 }
-.static h3{
-font-size: 96px;
-font-weight: 400;
-line-height: 96px;
+
+.static h3 {
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 96px;
 }
-.static__context{
-font-weight: 400;
-font-size: 14px;
-width: 217px;   
-line-height: 20px;
-letter-spacing: 2px;
-text-transform: uppercase;
+
+.static__context {
+    font-weight: 400;
+    font-size: 14px;
+    width: 217px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 895px) {
+    #red__section{
+        padding: 50px 0;
+    }
+    .red__container {
+        display: block;
+    }
+    .static {
+        padding-top: 20px;
+    }  
 }
