@@ -6,14 +6,11 @@
   padding-top: 90px;
   display: flex;
   flex-direction: column;
+  color: #fff;
   align-items: center;
   justify-content: center;
 }
 .main p {
-  color: #fff;
-}
-
-.main span {
   color: #fff;
 }
 

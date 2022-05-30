@@ -25,8 +25,6 @@ export default function openModal() {
   const sendBtn = document.querySelector(".modal__btn-send");
   const close = document.querySelector(".load__content");
   const doneBtn = document.querySelector(".hidden__btn-done");
-  const formInput = document.querySelector(".modal__input");
-  const inputEmail = document.querySelector(".modal_email");
   sendBtn.addEventListener("click", function (e) {
     const checked_btn = document.querySelector('input[name = "drone"]:checked');
     const ss = document.getElementById('checkbox__facebook');
@@ -35,6 +33,7 @@ export default function openModal() {
       }
     close.classList.add("hidden__modal__content");
     console.log("Plan: " + checked_btn.value);
+    
     setTimeout(() => {
       sendBtn.setAttribute("disabled", "");
       close.classList.remove("hidden__modal__content");
@@ -46,19 +45,5 @@ export default function openModal() {
         document.body.classList.remove("body__scroll-off");
       });
     }, 3000);
-    //     const inputVal = formInput.value;
-    //     const emailVal = inputEmail.value;
-    // formInput.forEach(function(input){
-    //     if(input.value == ''){
-    //         input.classList.add('error')
-    //         console.log('inputnooot');
-    // input.parentElement.setAttribute('data-error');
-    //         }
-    //     })
   });
 }
-
-// document.querySelectorAll('.modal__inputs[data-error] .modal__input')
-// .forEach(inpEl => {
-// inpEl.addEventListener('input', () => inpEl.parentElement.removeAttribute('data-error'));
-// });

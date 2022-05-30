@@ -1,4 +1,8 @@
-.main__section {
+#about__section {
+    width: 100%;
+}
+
+.about__container{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -6,22 +10,14 @@
     justify-content: space-around;
     margin-top: 94px;
 }
-
 .left__part {
     width: 420px;
-    left: 78px;
-    top: 45.234375px;
-    border-radius: 0px;
     margin: 100px;
 }
 
 .logo {
     height: 64px;
     width: 192px;
-    left: 0px;
-    top: 0px;
-    padding: 0;
-    border-radius: 0px;
 }
 
 .main_section__title {
@@ -30,27 +26,19 @@
     font-size: 54px;
     font-weight: 400;
     line-height: 60px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 .section__text {
     padding-top: 12px;
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
 }
-
-
 .section__btn {
     padding-top: 20px;
     display: flex;
     justify-content: center;
 }
-
 .buy-now__btn__main {
     margin-right: 10px;
     height: 40px;
@@ -79,7 +67,7 @@
 }
 
 .right__part {
-    height: 553px;
+    height: 552px;
     margin-right: 100px;
 }
 
