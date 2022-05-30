@@ -16,7 +16,7 @@
 }
 .section__context {
     padding-top: 14px;
-    width: 568px;
+   max-width: 568px;
     height: 48px;
     font-weight: 400;
     font-size: 18px;

@@ -98,12 +98,13 @@ text-align: center;
 }
 .card__text{
 margin-top: 15px;
+text-align: center;
 color:#222;
-font-family: Poppins;
+justify-content: center;
+align-items: center;
 font-size: 15px;
 font-weight: 400;
 line-height: 22px;
-text-align: center;
 }
 @media (max-width:731px) {
     .features__context{
@@ -112,5 +113,13 @@ text-align: center;
     }
     .features__text{
     font-size: 12px;
+    }
+    .phone__cards img{
+        position: absolute;
+        top:20px;
+        right: 0;
+        left : 0;
+        margin: auto;
+        width: 100%;
     }
 }

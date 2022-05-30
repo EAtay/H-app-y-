@@ -1,4 +1,4 @@
-.testimonials__container{
+.testimonials__container {
     background: #F2F2F2;
     display: flex;
     align-items: center;
@@ -7,50 +7,70 @@
     flex-direction: column;
     height: auto;
 }
-.testimonials__cards{
+
+.testimonials__cards {
     display: flex;
     padding-top: 40px;
     margin-bottom: 100px;
     height: auto;
     max-width: 1200px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
-.testimonials__card{
+
+.testimonials__card {
     height: 224px;
-    width: 379px;
+    max-width: 379px;
     background: #FFFFFF;
     border-radius: 20px;
 }
-.testimonials__card:nth-child(2n){
+
+.testimonials__card:nth-child(2n) {
     margin: 0 20px;
 }
 
-.text__cards{
+.text__cards {
     text-align: left;
     padding-left: 22px;
     padding-top: 30px;
-height: 96px;
-width: 312px;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #222222;
+    height: 96px;
+    max-width: 312px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
 }
-.bio__card{
+
+.bio__card {
     text-align: left;
     padding-left: 22px;
     padding-top: 22px;
 }
-.autor__card{
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-color: #1B1A1A;
+
+.autor__card {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1B1A1A;
 }
-.profession__card{
+
+.profession__card {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #1B1A1A;
+}
+@media(max-width:707px){
+    .testimonials__cards{
+        justify-content: center;
+    }
+    .testimonials__card{
+        margin: 25px 0;
+    }
+}
+@media (max-width: 404px) {
+    .section__title{
+margin-bottom: 20px;
+font-size: 30px;
+    }
 }
