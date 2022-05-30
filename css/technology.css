@@ -24,7 +24,7 @@
 }
 
 .right__part img {
-    width: 376px;
+    max-width: 376px;
     height: 100%;
 }
 
@@ -46,7 +46,7 @@
 .speed__section .left__part {
     margin-bottom: 0;
 }
-
+/* 
 @media(max-width: 895px) {
     #speed__section {
         width: 100%;
@@ -63,4 +63,4 @@
         #speed__section{
             width: 100%;
         }
-}
+} */

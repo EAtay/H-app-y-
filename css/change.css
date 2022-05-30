@@ -149,3 +149,32 @@
         font-size: 30px;
     }
 }
+
+@media (max-width: 517px) {
+    .mode__section {
+        width: 100%;
+    }
+
+    .img__bottom {
+        width: 400px;
+    }
+
+    .img__frame {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .context__frame {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        width: 450px;
+        height: 48px;
+    }
+    .btn__frame {   
+        width: 400px;
+    }
+    .title__frame {
+        font-size: 30px;
+    }
+}
