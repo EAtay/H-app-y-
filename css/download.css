@@ -9,11 +9,22 @@ align-items: center;
 flex-direction: column;
 }
 .download__context{
-width:589px;
+max-width:589px;
 font-weight: 400;
 font-size: 18px;
 line-height: 24px;
 padding-top: 14px;
 padding-bottom: 26px;
 color: #666666;
+}
+
+@media (max-width:600px) {
+    .container__download{
+        width: 100%;
+        }   
+}
+@media (max-width:00px) {
+    .container__download{
+        width: 100%;
+        }   
 }

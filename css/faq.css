@@ -1,4 +1,4 @@
-.faq__container{
+.faq__container {
     background-color: #E5E5E5;
     display: flex;
     justify-content: left;
@@ -9,46 +9,60 @@
     padding-left: 104px;
     color: #222222;
 }
-.top__faq{
-    width: 1200px;
+
+.top__faq {
+    /* max-width: 1200px; */
     text-align: left;
     margin: auto;
     height: auto;
 }
 
-.name__section{
-font-weight: 400; 
-font-size: 32px;
-line-height: 36px;
+.name__section {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
 }
 
-.title__faq{
+.title__faq {
     height: 20px;
     padding-top: 13px;
 }
-.faq__questions{
+
+.faq__questions {
     margin: auto;
     max-width: 1200px;
     margin-top: 42px;
     display: flex;
     flex-wrap: wrap;
 }
-.questions__card{
+
+.questions__card {
     max-width: 600px;
     margin: 22px 0;
 }
 
-.faq__tille{
-font-size: 18px;
-font-weight: 400;
-line-height: 28px;
+.faq__tille {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
 }
 
-.faq__answer{
+.faq__answer {
     padding-top: 10px;
     height: auto;
-max-width: 576px;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
+    max-width: 576px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (max-width:800px) {
+    .faq__container {
+        padding: 50px;
+    }
+
+    .top__faq {
+        margin: 0;
+        width: 100%;
+    }
 }

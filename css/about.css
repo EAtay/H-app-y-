@@ -73,6 +73,11 @@
 .right__part img {
     height: 100%;
 }
+@media (max-width:900px) {
+    .right__part{
+        margin: 0;
+    }
+}
 @media (max-width: 440px) {
     .left__part{
         margin: 50px;
@@ -86,8 +91,7 @@
     }
     .main_section__title {
         font-size: 36px;
-        width: 200px;
-        line-height: 34px;
+        width: 100%;
     }
     .section__text {
         font-size: 10px;
@@ -95,7 +99,6 @@
     .buy-now__btn__main {
         height: 38px;
         width: 118px;
-        border-radius: 4px;
-        font-size: 13px;
+    font-size: 12px;
     }
 }
