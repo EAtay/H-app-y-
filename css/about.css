@@ -66,15 +66,14 @@
 }
 
 .right__part {
-    max-width: 376px;
+    max-width: 370px;
     margin-right: 100px;
-}
-.right__part img {
-    height: 100%;
 }
 @media (max-width:900px) {
     .right__part{
         margin: 0;
+        display: flex;
+    justify-content: center;
     }
 }
 @media (max-width: 440px) {
