@@ -106,7 +106,7 @@ a {
     .burger__btn:hover {
         padding: 16px;
         border-radius: 50%;
-        background-color: #a5a5a5;
+        background-color: #E5E5E5;
     }
 
     .burger__btn:focus {
@@ -169,6 +169,13 @@ a {
         justify-content: center;
         overflow: auto;
     }
+    .navbar__ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar__li{
+        padding-bottom: 18px;
+    }
 
     .navbar::before {
         content: "";
@@ -176,6 +183,9 @@ a {
         width: 100%;
         top: 0;
         left: 0;
+    }
+    .navbar__btn{
+        margin-top: 34px;
     }
 
     .navbar._active {

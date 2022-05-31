@@ -59,11 +59,11 @@
                         </defs>
                     </svg>
                 </div>
-                <ul class="menu">
-                    <li><a href="#features__section">Features</a></li>
-                    <li><a href="#pricing__section">Pricing</a></li>
-                    <li><a href="#testimonials__section">Testimonials</a></li>
-                    <li><a href="#faq">FAQ</a> </li>
+                <ul class="navbar__ul">
+                    <li class="navbar__li"><a href="#features__section">Features</a></li>
+                    <li class="navbar__li"><a href="#pricing__section">Pricing</a></li>
+                    <li class="navbar__li"><a href="#testimonials__section">Testimonials</a></li>
+                    <li class="navbar__li"><a href="#faq">FAQ</a> </li>
                 </ul>
                 <button class="navbar__btn">
                     <a href="#download" class="btn__scroll">
@@ -77,7 +77,7 @@
                 </div>
             </div>
     </header>
-     <div class="main" id="timer">
+    <div class="main" id="timer">
         <div class="main__text">
             <p class="p__title">big sale on lifetime plan</p>
             <p class="p__context">there is very little left</p>
@@ -129,7 +129,7 @@
                             </linearGradient>
                         </defs>
                     </svg>
-    
+
                 </div>
                 <p class="main_section__title">
                     The future of digital photos.
@@ -145,7 +145,7 @@
                     <button class="buy-now__btn__main">read more</button>
                 </div>
             </div>
-            <div class="right__part">
+            <div id="right__part" class="right__part">
                 <img src="./img/phone.png" alt="">
             </div>
         </div>
@@ -311,7 +311,7 @@
             </div>
         </div>
     </section>
-   <section id="technology__section">
+    <section id="technology__section">
         <div class="left__part">
             <p class="title__text">
                 technology
@@ -349,7 +349,7 @@
             </p>
         </div>
     </section>
-   <section id="theme-section">
+    <section id="theme-section">
         <div class="mode__section">
             <div class="card__frame">
                 <p class="text__frame">
@@ -385,7 +385,7 @@
             </div>
         </div>
     </section>
-     <section id="pricing__section">
+    <section id="pricing__section">
         <div class="pricing__container">
             <div class="pricing__top">
                 <p class="title__text">pricing</p>
@@ -471,7 +471,7 @@
             </div>
         </div>
     </section>
-   <section id="download">
+    <section id="download">
         <div class="container__download">
             <p class="title__text">
                 download
@@ -568,7 +568,7 @@
             </button>
         </div>
     </section>
-      <section id="faq">
+    <section id="faq">
         <div class="faq__container">
             <div class="top__faq">
                 <p class="name__section">FAQ</p>
@@ -606,7 +606,7 @@
             </div>
         </div>
     </section>
-  <footer>
+    <footer>
         <svg width="120" height="126" viewBox="0 0 120 126" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M44.7127 0H77.093C84.5054 0 87.1933 0.77073 89.9025 2.2185C92.6117 3.66753 94.7396 5.79234 96.1886 8.49927C97.6375 11.2062 98.4089 13.8919 98.4089 21.2981V53.6513C98.4089 61.0576 97.6375 63.742 96.1886 66.4502C94.7396 69.1571 92.6117 71.2819 89.9025 72.7309C87.1933 74.1787 84.5054 74.9494 77.093 74.9494H44.7127C37.3002 74.9494 34.6123 74.1787 31.9031 72.7309C29.1939 71.2819 27.0673 69.1571 25.6183 66.4502C24.1681 63.742 23.3967 61.0576 23.3967 53.6513V21.2981C23.3967 13.8919 24.1681 11.2062 25.6183 8.49927C27.0673 5.79234 29.1939 3.66753 31.9031 2.2185C34.6123 0.77073 37.3002 0 44.7127 0Z"
@@ -652,84 +652,86 @@
         </div>
 
     </footer>
-    <!--  <div class="modal">
+    <div class="modal">
         <div class="modal__body">
             <div class="modal__content">
-                <form action="" class="js-form" novalidate>
+                <div class="close__content">
+                    <span class="close_modal"></span>
+                </div>
+                <form action="" id="form" novalidate>
                     <p class="modal__title">
                         Leave a request for the purchase of goods
                     </p>
-                <!-- <div class="modal__inputs">
-                    <input type="text" class="modal__input js-input input-name"name="firstname" placeholder="Atay Estebessov">
-                    <span id="span__name"></span>
-                </div>
-                <div class="modal__inputs">
-                    <input type="email" class="modal__input js-input input-email" placeholder="Email">
-                    <span id="span__mail"></span>
-                </div> 
-                <div class="modal_input-block"><input type="email" class="modal__input-text js-input-email" name="email"
-                    placeholder="email"> <span id="span__email"></span></div>
-                <div class="modal__btns">
-                    <p class="form__title">Your plan?</p>
-                    <form>
-                        <div class="radiobtn">
-                            <input type="radio" id="standard" name="drone" value="standard" />
-                            <label for="standard" class="label__standard-color">Standard</label>
+                    <div class="modal__inputs">
+                        <input id="firstname" type="text" class="modal__input js-input" name="firstname"
+                            placeholder="Atay Estebessov">
+                            <div class="input-status"></div>
                         </div>
+                    <div class="modal__inputs">
+                        <input type="email" id="email" class="modal__input js-input" placeholder="Email">
+                        <div class="input-status"></div>
+                    </div>
+                    <div class="modal__btns">
+                        <p class="form__title">Your plan?</p>
+                        <form>
+                            <div class="radiobtn">
+                                <input type="radio" id="standard" name="drone" value="standard" />
+                                <label for="standard" class="label__standard-color">Standard</label>
+                            </div>
 
-                        <div class="radiobtn">
-                            <input type="radio" id="premium" name="drone" value="premium"/>
-                            <label for="premium" class="label-premium-color">Premium</label>
-                        </div>
+                            <div class="radiobtn">
+                                <input type="radio" id="premium" name="drone" value="premium" />
+                                <label for="premium" class="label-premium-color">Premium</label>
+                            </div>
 
-                        <div class="radiobtn">
-                            <input type="radio" id="lifetime" name="drone" value="lifetime" checked />
-                            <label for="lifetime" class="label__lifetime-color">Lifetime</label>
+                            <div class="radiobtn">
+                                <input type="radio" id="lifetime" name="drone" value="lifetime" checked />
+                                <label for="lifetime" class="label__lifetime-color">Lifetime</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal__faq">
+                        <p class="modal__questions">How do you know about our app?</p>
+                        <div class="modal__social-networks">
+                            <div class="checkbox__container">
+                                <input type="checkbox" class="checkbox__input" id=" checkbox__facebook"
+                                    name="checkbox__facebook" value="yes">
+                                <label for="checkbox__facebook">Facebook</label>
+                            </div>
+                            <div class="checkbox__container">
+                                <input type="checkbox" class="checkbox__input" id="checkbox__inst" name="instagram"
+                                    value="yes">
+                                <label for="checkbox__inst">Insagram</label>
+                            </div>
+                            <div class="checkbox__container">
+                                <input type="checkbox" class="checkbox__input" id="checkbox__utube" name="youtube"
+                                    value="yes">
+                                <label for="checkbox__utube">Youtube</label>
+                            </div>
+                            <div class="checkbox__container">
+                                <input type="checkbox" class="checkbox__input" id="checkbox__other" name="other"
+                                    value="yes">
+                                <label for="checkbox__other">Other</label>
+                            </div>
                         </div>
-                    </form> 
-                </div>
-                <div class="modal__faq">
-                    <p class="modal__questions">How do you know about our app?</p>
-                    <div class="modal__social-networks">
-                        <div class="checkbox__container">
-                            <input type="checkbox" class="checkbox__input" id=" checkbox__facebook"
-                                name="checkbox__facebook" value="yes">
-                            <label for="checkbox__facebook">Facebook</label>
-                        </div> 
-                        <div class="checkbox__container">
-                            <input type="checkbox" class="checkbox__input" id="checkbox__inst" name="instagram"
-                                value="yes">
-                            <label for="checkbox__inst">Insagram</label>
+                        <button class="modal__btn-send" id="submit" type="submit">send</button>
+                        <div class="load__content">
+                            <svg class="load__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 20H16V17C16 15.9 15.6083 14.9583 14.825 14.175C14.0417 13.3917 13.1 13 12 13C10.9 13 9.95833 13.3917 9.175 14.175C8.39167 14.9583 8 15.9 8 17V20ZM19 22H5C4.71667 22 4.479 21.904 4.287 21.712C4.09567 21.5207 4 21.2833 4 21C4 20.7167 4.09567 20.4793 4.287 20.288C4.479 20.096 4.71667 20 5 20H6V17C6 15.9833 6.23767 15.029 6.713 14.137C7.18767 13.2457 7.85 12.5333 8.7 12C7.85 11.4667 7.18767 10.754 6.713 9.862C6.23767 8.97067 6 8.01667 6 7V4H5C4.71667 4 4.479 3.904 4.287 3.712C4.09567 3.52067 4 3.28333 4 3C4 2.71667 4.09567 2.479 4.287 2.287C4.479 2.09567 4.71667 2 5 2H19C19.2833 2 19.5207 2.09567 19.712 2.287C19.904 2.479 20 2.71667 20 3C20 3.28333 19.904 3.52067 19.712 3.712C19.5207 3.904 19.2833 4 19 4H18V7C18 8.01667 17.7627 8.97067 17.288 9.862C16.8127 10.754 16.15 11.4667 15.3 12C16.15 12.5333 16.8127 13.2457 17.288 14.137C17.7627 15.029 18 15.9833 18 17V20H19C19.2833 20 19.5207 20.096 19.712 20.288C19.904 20.4793 20 20.7167 20 21C20 21.2833 19.904 21.5207 19.712 21.712C19.5207 21.904 19.2833 22 19 22Z"
+                                    fill="#7E7E7E" />
+                            </svg>
+                            <p class="load__text">loading...</p>
                         </div>
-                        <div class="checkbox__container">
-                            <input type="checkbox" class="checkbox__input" id="checkbox__utube" name="youtube"
-                                value="yes">
-                            <label for="checkbox__utube">Youtube</label>
-                        </div>
-                        <div class="checkbox__container">
-                            <input type="checkbox" class="checkbox__input" id="checkbox__other" name="other"
-                                value="yes">
-                            <label for="checkbox__other">Other</label>
+                        <div class="hidden__btn-done">
+                            <button class="btn__done">done</button>
                         </div>
                     </div>
-                    <button class="modal__btn-send" type="submit">send</button>
-                    <div class="load__content">
-                        <svg class="load__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8 20H16V17C16 15.9 15.6083 14.9583 14.825 14.175C14.0417 13.3917 13.1 13 12 13C10.9 13 9.95833 13.3917 9.175 14.175C8.39167 14.9583 8 15.9 8 17V20ZM19 22H5C4.71667 22 4.479 21.904 4.287 21.712C4.09567 21.5207 4 21.2833 4 21C4 20.7167 4.09567 20.4793 4.287 20.288C4.479 20.096 4.71667 20 5 20H6V17C6 15.9833 6.23767 15.029 6.713 14.137C7.18767 13.2457 7.85 12.5333 8.7 12C7.85 11.4667 7.18767 10.754 6.713 9.862C6.23767 8.97067 6 8.01667 6 7V4H5C4.71667 4 4.479 3.904 4.287 3.712C4.09567 3.52067 4 3.28333 4 3C4 2.71667 4.09567 2.479 4.287 2.287C4.479 2.09567 4.71667 2 5 2H19C19.2833 2 19.5207 2.09567 19.712 2.287C19.904 2.479 20 2.71667 20 3C20 3.28333 19.904 3.52067 19.712 3.712C19.5207 3.904 19.2833 4 19 4H18V7C18 8.01667 17.7627 8.97067 17.288 9.862C16.8127 10.754 16.15 11.4667 15.3 12C16.15 12.5333 16.8127 13.2457 17.288 14.137C17.7627 15.029 18 15.9833 18 17V20H19C19.2833 20 19.5207 20.096 19.712 20.288C19.904 20.4793 20 20.7167 20 21C20 21.2833 19.904 21.5207 19.712 21.712C19.5207 21.904 19.2833 22 19 22Z"
-                                fill="#7E7E7E" />
-                        </svg>
-                        <p class="load__text">loading...</p>
-                    </div>
-                    <div class="hidden__btn-done">
-                        <button class="btn__done">done</button>
-                    </div>
-                </div>
-            </form>
+                </form>
             </div>
         </div>
-    </div> -->
+    </div>
     <script type="module" src="./js/script.js"></script>
 </body>
 
