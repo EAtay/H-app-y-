@@ -12,7 +12,7 @@ export default function openModal() {
     email = document.getElementById("email"),
     errorMsg = document.querySelectorAll(".input-status");
   const doneBtn = document.querySelector(".hidden__btn-done");
-  const closeModal = document.querySelector('.close__content');
+  const closeModal = document.querySelector(".close__content");
   const checked_btn = document.querySelector('input[name = "drone"]:checked');
   buyBtn.addEventListener("click", function (e) {
     modalOpen.style.display = "block";
@@ -61,9 +61,9 @@ export default function openModal() {
     doneBtn.style.display = "none";
     sendBtn.removeAttribute("disabled", "");
     document.body.classList.remove("body__scroll-off");
+  });
   sendBtn.addEventListener("click", function (e) {
     e.preventDefault();
-
     engine(username, 0, "username cannot be blank");
     engine(email, 1, "email cannot be blank");
     if (!validateName(username.value)) {
@@ -78,7 +78,6 @@ export default function openModal() {
     } else {
       errorMsg[1].innerHTML = "";
     }
-
     loadContent.classList.add("hidden__modal__content");
     console.log("Plan: " + checked_btn.value);
     setTimeout(() => {
@@ -95,4 +94,4 @@ export default function openModal() {
       });
     }, 3000);
   });
-  })}
+}
