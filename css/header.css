@@ -6,9 +6,10 @@ header {
     box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
     z-index: 1000;
 }
-.container {
+.header__container {
+    padding: 0 120px;
     height: 100%;
-    width: 90%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     align-items: center;

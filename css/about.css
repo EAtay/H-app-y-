@@ -14,7 +14,7 @@
     margin: 100px;
 }
 
-.logo {
+.about__logo {
     height: 64px;
     width: 192px;
 }
@@ -80,7 +80,7 @@
     .left__part{
         margin: 50px;
     }
-    .logo {
+    .about__logo {
         width: 172px;
     }
     .right__part{

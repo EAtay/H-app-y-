@@ -11,10 +11,8 @@
 }
 
 .top__faq {
-    /* max-width: 1200px; */
     text-align: left;
-    margin: auto;
-    height: auto;
+    margin: 0;
 }
 
 .name__section {
@@ -29,7 +27,6 @@
 }
 
 .faq__questions {
-    margin: auto;
     max-width: 1200px;
     margin-top: 42px;
     display: flex;
