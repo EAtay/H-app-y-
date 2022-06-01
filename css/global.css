@@ -14,15 +14,41 @@
     font-size: 32px;
     line-height: 36px;
 }
+
 .section__context {
     padding-top: 14px;
-   max-width: 568px;
+    max-width: 568px;
     height: 48px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #666666;
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
+
+.standard {
+    color: #0278ED;
+}
+
+.premium_color {
+    color: #FF5437;
+}
+
+.lifetime_color {
+    color: #FF9209;
+}
+
+.spilit {
+    color: #E738CE;
+}
+
+.skyblue {
+    color: #00C6DF;
+}
+
+.pirple {
+    color: #B25DF8;
+}

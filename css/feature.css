@@ -79,24 +79,6 @@ font-weight: 400;
 line-height: 30px;
 text-align: center;
 }
-.standard{
-    color: #0278ED;
-}
-.red {
-    color: #FF5437;
-}
-.orange{
-    color: #FF9209;
-}
-.spilit{
-   color: #E738CE;
-}
-.skyblue{
-    color: #00C6DF;
-}
-.pirple{
-    color: #B25DF8;
-}
 .card__text{
 margin-top: 15px;
 text-align: center;

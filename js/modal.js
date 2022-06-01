@@ -53,7 +53,6 @@ export default function openModal() {
       errorMsg[serial].innerHTML = "";
     }
   };
-
   closeModal.addEventListener("click", function (e) {
     username.value = "";
     email.value = "";

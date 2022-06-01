@@ -40,14 +40,13 @@
 .title__buy-card {
     max-width: 85px;
     height: 24px;
-    top: 49px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
 }
 
 .price {
-    font-size: 108px;
+    font-size: 110px;
     font-weight: 400;
     line-height: 124px;
     letter-spacing: 8px;

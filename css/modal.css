@@ -351,8 +351,8 @@ form {
 
     .close_modal {
         left: 126px;
+        z-index: 1002;
     }
-
     .close_modal:before,
     .close_modal:after {
         height: 22px;
