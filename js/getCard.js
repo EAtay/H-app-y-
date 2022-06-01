@@ -2,12 +2,14 @@ import data from "./config.json" assert { type: "json" };
 export default function card() {
   let splitPlans = data.plans;
   let splitTestimonials = data.testimonials;
+  let link = data.appStoreLink;
   const [firstCard, secondCard, thirdCard] = splitTestimonials;
   const [standard, premium, lifetime] = splitPlans;
   const priceCards = document.querySelectorAll(".price");
   const titleCards = document.querySelectorAll(".title__buy-card");
   const testimonialsCardText = document.querySelectorAll(".text__cards");
   const testimonialsCardAuthor = document.querySelectorAll(".autor__card");
+  const linkAppStore = document.getElementById('gotoappstore');
   const testimonialsCardProfession =
     document.querySelectorAll(".profession__card");
   priceCards[0].innerHTML = "$" + standard.price;
@@ -28,4 +30,6 @@ export default function card() {
   testimonialsCardText[2].innerHTML = thirdCard.text;
   testimonialsCardAuthor[2].innerHTML = thirdCard.name;
   testimonialsCardProfession[2].innerHTML = thirdCard.job;
+
+  linkAppStore.href = link
 }
