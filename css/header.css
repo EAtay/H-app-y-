@@ -206,5 +206,9 @@ a {
 @media(max-width: 761px) {
     .container {
         justify-content: space-between; 
+        
+    }
+    .header__container{
+        padding: 0 40px;
     }
 }
