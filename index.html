@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
+    <title>H-app-y-</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -46,30 +46,29 @@
         </div>
         <div class="timer__container">
             <div class="timer__container-item">
-                <span class="number" id="days">
-                </span>
+                <span class="number" id="days">00</span>
                 <p class="timer__text">days</p>
             </div>
             <div class="timer__line">|</div>
             <div class="timer__container-item">
-                <span class="number" id="hours"></span>
+                <span class="number" id="hours">00</span>
                 <p class="timer__text">hours</p>
             </div>
             <div class="timer__line">|</div>
             <div class="timer__container-item">
-                <span class="number" id="minutes"></span>
+                <span class="number" id="minutes">00</span>
                 <p class="timer__text">minutes</p>
             </div>
             <div class="timer__line">|</div>
             <div class="timer__container-item">
-                <span class="number" id="seconds"></span>
+                <span class="number" id="seconds">00</span>
                 <p class="timer__text">seconds</p>
             </div>
         </div>
     </div>
     <section id="about__section">
         <div class="about__container">
-            <div class="left__part">
+            <div class="left__part about__left">
                 <div class="about__logo">
                     <img src="./img/about-logo.svg">
                 </div>
@@ -84,11 +83,11 @@
                     <button class="buy-now__btn__main">
                         buy now
                     </button>
-                    <button class="buy-now__btn__main">read more</button>
+                    <button class="buy-now__btn__main second__about-btn">read more</button>
                 </div>
             </div>
             <div id="right__part" class="right__part">
-                <img src="./img/phone.png" alt="">
+                <img src="./img/phone.png">
             </div>
         </div>
     </section>
@@ -503,17 +502,17 @@
                         <form>
                             <div class="radiobtn">
                                 <input type="radio" id="standard" name="drone" value="standard" />
-                                <label for="standard" class="label__standard-color">Standard</label>
+                                <label for="standard" class="label__standard-color selected_rate"></label>
                             </div>
 
                             <div class="radiobtn">
                                 <input type="radio" id="premium" name="drone" value="premium" />
-                                <label for="premium" class="label-premium-color">Premium</label>
+                                <label for="premium" class="label-premium-color selected_rate" ></label>
                             </div>
 
                             <div class="radiobtn">
                                 <input type="radio" id="lifetime" name="drone" value="lifetime" checked />
-                                <label for="lifetime" class="label__lifetime-color">Lifetime</label>
+                                <label for="lifetime" class="label__lifetime-color selected_rate"></label>
                             </div>
                         </form>
                     </div>

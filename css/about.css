@@ -5,7 +5,7 @@
 .about__container {
     display: flex;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 130px;
     flex-wrap: wrap;
     margin-top: 94px;
 }
@@ -14,9 +14,12 @@
     max-width: 420px;
     margin: 100px;
 }
+.about__left{
+    margin: 44px 94px;
+}
 
 #right__part {
-    padding-left: 54px;
+    padding-left: 124px;
 }
 
 .about__logo {
@@ -25,6 +28,7 @@
 }
 
 .main_section__title {
+    margin-top: 10px;
     height: 120px;
     width: 400px;
     font-size: 54px;
@@ -33,7 +37,8 @@
 }
 
 .section__text {
-    padding-top: 12px;
+    max-width: 394px;
+    padding-top: 18px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -42,7 +47,7 @@
 .section__btn {
     padding-top: 20px;
     display: flex;
-    justify-content: center;
+    padding-left: 6px;
 }
 
 .buy-now__btn__main {
@@ -58,6 +63,9 @@
     line-height: 18px;
     letter-spacing: 2px;
 }
+.second__about-btn{
+    width: 145px;
+}
 
 .buy-now__btn__main:hover {
     background: #4E4E4E;
@@ -72,13 +80,22 @@
 }
 
 .right__part {
-    max-width: 370px;
-    margin-right: 100px;
+    max-width: 376px;
+    height: 548px;
 }
 
+@media (max-width:1350px) {
+    #right__part {
+        padding-left: 0;
+    }
+    .about__container{
+        margin-left: 0;
+    }
+}
 @media (max-width:1200px) {
     .about__container {
         width: 100%;
+        /* margin: 0; */
         justify-content: center;
     }
 

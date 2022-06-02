@@ -7,6 +7,7 @@ export default function card() {
   const [standard, premium, lifetime] = splitPlans;
   const priceCards = document.querySelectorAll(".price");
   const titleCards = document.querySelectorAll(".title__buy-card");
+  const modalSelectedItems = document.querySelectorAll('.selected_rate')
   const testimonialsCardText = document.querySelectorAll(".text__cards");
   const testimonialsCardAuthor = document.querySelectorAll(".autor__card");
   const linkAppStore = document.getElementById('gotoappstore');
@@ -19,6 +20,10 @@ export default function card() {
   priceCards[2].innerHTML = "$" + lifetime.price;
   titleCards[2].innerHTML = lifetime.name;
 
+  modalSelectedItems[0].innerHTML = standard.name;
+  modalSelectedItems[1].innerHTML = premium.name;
+  modalSelectedItems[2].innerHTML = lifetime.name;
+
   testimonialsCardText[0].innerHTML = firstCard.text;
   testimonialsCardAuthor[0].innerHTML = firstCard.name;
   testimonialsCardProfession[0].innerHTML = firstCard.job;
@@ -30,6 +35,8 @@ export default function card() {
   testimonialsCardText[2].innerHTML = thirdCard.text;
   testimonialsCardAuthor[2].innerHTML = thirdCard.name;
   testimonialsCardProfession[2].innerHTML = thirdCard.job;
+
+
 
   linkAppStore.href = link
 }
