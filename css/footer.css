@@ -14,3 +14,9 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 414px) {
+    #footer{
+        padding: 104px 0 84px;
+    }
+}

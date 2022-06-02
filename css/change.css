@@ -8,9 +8,8 @@
 }
 
 .card__frame {
-    max-width: 455px;
+    max-width: 600px;
     text-align: center;
-    top: 0;
 }
 
 .text__frame {
@@ -36,14 +35,13 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    width: 578px;
+    max-width: 578px;
     height: 48px;
 }
 
 .img__frame {
     height: 100%;
     width: 400px;
-    bottom: 0;
 }
 
 .img__bottom {
@@ -66,7 +64,7 @@
     height: 49px;
     background: none;
     width: 128px;
-    left: 165px;
+    left: 164px;
     border-radius: 5px;
     font-style: normal;
     font-weight: 400;
@@ -81,19 +79,16 @@
 
 .dark__btn {
     background: none;
-    height: 49px;
-    width: 123px;
-    left: 313px;
+    height: 48px;
+    width: 122px;
     border-radius: 5px;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    text-align: center;
     letter-spacing: 2px;
-    text-transform: uppercase;
     color: #FF9209;
     fill: #FF9209;
+    text-transform: uppercase;
 }
 
 /* Ligth mode */
@@ -124,9 +119,11 @@
     .card__frame {
         width: 100%;
     }
-    .img__frame{
+
+    .img__frame {
         width: 90%;
     }
+
     .context__frame {
         font-size: 14px;
         width: 100%;

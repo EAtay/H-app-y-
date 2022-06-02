@@ -13,12 +13,12 @@
     align-items: center;
 }
 
-.static {
+.red__container-item {
     text-align: center;
     color: #fff;
 }
 
-.static h3 {
+.red__container-item h3 {
     font-size: 96px;
     font-weight: 400;
     line-height: 96px;
@@ -27,7 +27,7 @@
 .static__context {
     font-weight: 400;
     font-size: 14px;
-    width: 217px;
+    width: 216px;
     line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -40,7 +40,7 @@
     .red__container {
         display: block;
     }
-    .static {
+    .red__container-item {
         padding-top: 20px;
     }  
 }

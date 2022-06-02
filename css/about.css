@@ -1,17 +1,22 @@
 #about__section {
     width: 100%;
 }
-.about__container{
+
+.about__container {
     display: flex;
-    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
     margin-top: 94px;
 }
+
 .left__part {
     max-width: 420px;
     margin: 100px;
+}
+
+#right__part {
+    padding-left: 54px;
 }
 
 .about__logo {
@@ -33,11 +38,13 @@
     font-weight: 400;
     line-height: 24px;
 }
+
 .section__btn {
     padding-top: 20px;
     display: flex;
     justify-content: center;
 }
+
 .buy-now__btn__main {
     margin-right: 10px;
     height: 40px;
@@ -50,7 +57,6 @@
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 2px;
-    text-align: center;
 }
 
 .buy-now__btn__main:hover {
@@ -69,34 +75,58 @@
     max-width: 370px;
     margin-right: 100px;
 }
-@media (max-width:900px) {
-    .right__part{
+
+@media (max-width:1200px) {
+    .about__container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #right__part {
+        padding: 0;
+    }
+    .right__part {
         margin: 0;
         display: flex;
-    justify-content: center;
+        justify-content: center;
+    }
+
+    .left__part {
+        margin: 0;
+        padding: 0 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 }
+
 @media (max-width: 440px) {
-    .left__part{
+    .left__part {
         margin: 50px;
     }
+
     .about__logo {
         width: 172px;
     }
-    .right__part{
+
+    .right__part {
         margin: 0;
         width: 100%;
     }
+
     .main_section__title {
         font-size: 36px;
         width: 100%;
     }
+
     .section__text {
         font-size: 10px;
     }
+
     .buy-now__btn__main {
         height: 38px;
         width: 118px;
-    font-size: 12px;
+        font-size: 12px;
     }
 }

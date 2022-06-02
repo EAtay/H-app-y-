@@ -1,4 +1,4 @@
-.title__text {
+.title__section {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -8,7 +8,6 @@
 }
 
 .section__title {
-    height: 36px;
     padding: 5px;
     font-weight: 400;
     font-size: 32px;
@@ -51,4 +50,10 @@ html {
 
 .pirple {
     color: #B25DF8;
+}
+button{
+    border: none;
+}
+a{
+    text-decoration: none;
 }

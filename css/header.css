@@ -6,6 +6,7 @@ header {
     box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.15);
     z-index: 1000;
 }
+
 .header__container {
     padding: 0 120px;
     height: 100%;
@@ -15,36 +16,42 @@ header {
     align-items: center;
     justify-content: space-around;
 }
+
 .body__scroll-off {
     overflow: hidden;
 }
+
 a {
     text-decoration: none;
     color: #666666;
 }
+
 .logo {
     width: 100%;
     display: flex;
-    align-items: center;
 }
+
 .navbar {
     display: flex;
     align-items: center;
 }
+
 .navbar ul {
     width: 438px;
-    padding: 13px 5px 13px 18px;
+    padding: 12px 4px 12px 18px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .navbar li {
     font-weight: 400;
     font-size: 15px;
-    list-style: none;
     line-height: 24px;
+    list-style: none;
     color: #666666;
 }
+
 .navbar__btn {
     width: 172px;
     height: 40px;
@@ -56,38 +63,48 @@ a {
     background: #222222;
     color: #FFFFFF;
 }
+
 .navbar__btn:hover {
     background: #4E4E4E;
 }
+
 .navbar__btn:active {
     transform: scale(0.98);
 }
+
 .navbar__btn:focus {
     outline: 2px solid #5AB0FF;
 }
+
 .btn__scroll {
     color: #FFFFFF;
 }
+
 .burger__btn {
     display: none;
 }
+
 .menu__icon {
     display: none;
 }
+
 .logo__nav {
     display: none;
 }
+
 @media(max-width: 767px) {
 
     .container__header {
         width: 80%;
         justify-content: space-between;
     }
+
     .logo__nav {
         height: 40px;
         width: 120px;
         display: block;
     }
+
     .menu__icon {
         z-index: 1006;
         display: block;
@@ -170,11 +187,13 @@ a {
         justify-content: center;
         overflow: auto;
     }
-    .navbar__ul{
+
+    .navbar__ul {
         display: flex;
         flex-direction: column;
     }
-    .navbar__li{
+
+    .navbar__li {
         padding-bottom: 18px;
     }
 
@@ -185,7 +204,8 @@ a {
         top: 0;
         left: 0;
     }
-    .navbar__btn{
+
+    .navbar__btn {
         margin-top: 34px;
     }
 
@@ -200,15 +220,13 @@ a {
     }
 }
 
-
-
-
 @media(max-width: 761px) {
     .container {
-        justify-content: space-between; 
-        
+        justify-content: space-between;
+
     }
-    .header__container{
+
+    .header__container {
         padding: 0 40px;
     }
 }

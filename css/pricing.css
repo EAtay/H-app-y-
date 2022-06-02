@@ -6,14 +6,11 @@
     justify-content: center;
     text-align: center;
 }
-
 .pricing__top {
     padding-top: 100px;
-}
+}   
 
 .card__pricing {
-    height: auto;
-    border-radius: 0px;
     padding-top: 40px;
     margin-bottom: 100px;
     display: flex;

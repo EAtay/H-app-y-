@@ -7,12 +7,14 @@ export default function burger() {
     menuNav.classList.toggle("_active");
   });
   const renderModalLink = () => {
-    const links = document.querySelectorAll('.navbar__li');
-      links.forEach(link=>link.addEventListener('click', () =>{
+    const links = document.querySelectorAll(".navbar__li");
+    links.forEach((link) =>
+      link.addEventListener("click", () => {
         document.body.classList.remove("_lock");
-      iconMenu.classList.remove("_active");
-      menuNav.classList.remove("_active");
-      }))
+        iconMenu.classList.remove("_active");
+        menuNav.classList.remove("_active");
+      })
+    );
   };
-  renderModalLink()
-  }
+  renderModalLink();
+}
