@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --config webpack.config.js --mode=development --open"
+    "start": "npm run build && cd build && serve -l 3000"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "mini-css-extract-plugin": "^2.6.0",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "sass-loader": "^13.0.0",
+    "serve": "^13.0.2",
     "style-loader": "^3.3.1",
     "stylelint": "^14.8.5",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",

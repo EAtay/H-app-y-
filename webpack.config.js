@@ -32,10 +32,10 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        // {
-        //   from: './config.json',
-        //   to: './config.json',
-        // },
+        {
+          from: './src/js/config.json',
+          to: './src/js/config.json',
+        },
         {
           from: './src/img',
           to: './img',
