@@ -1,14 +1,20 @@
 import data from "./config.json" assert { type: "json" };
 export default function timer() {
+  console.log(data)
   let splitDate = data.timerEndDate.split(/\W/);
   const [day, month, year, hour, minutes] = splitDate;
   const dataEnd = new Date(year, month - 1, day, hour, minutes);
   const timerDelete = document.getElementById("timer");
   const deleteMarginTop = document.querySelector(".about__container");
-  const interfal = setInterval(countDown, 1000);
+  const interfal = setInterval(countDown, 0);
+  
   function countDown() {
     const dataNow = new Date().getTime();
     const timeDistance = dataEnd - dataNow;
+    if(timeDistance > 0 ){
+      timerDelete.style.display = 'flex';
+
+    }
     const days = Math.floor(timeDistance / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
       (timeDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)

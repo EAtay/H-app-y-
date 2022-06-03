@@ -50,9 +50,11 @@ export default function openModal() {
       document.body.classList.add("body__scroll-off");
     });
   });
-  let engine = (id, serial, message) => {
+  let validation = (id, serial, message) => {
     if (id.value.trim() === "") {
       errorMsg[serial].innerHTML = message;
+      id.classList.add("error-input");
+
       return false;
     } else {
       errorMsg[serial].innerHTML = "";
@@ -64,18 +66,11 @@ export default function openModal() {
       errorMsg[serial].innerHTML = "";
     }
   };
-  closeModal.addEventListener("click", function (e) {
-    username.value = "";
-    email.value = "";
-    modalOpen.style.display = "none";
-    doneBtn.style.display = "none";
-    sendBtn.removeAttribute("disabled", "");
-    document.body.classList.remove("body__scroll-off");
-  });
+
   sendBtn.addEventListener("click", function (e) {
     e.preventDefault();
-    engine(username, 0, "username cannot be blank");
-    engine(email, 1, "email cannot be blank");
+    validation(username, 0, "username cannot be blank");
+    validation(email, 1, "email cannot be blank");
 
     if (username.value && email.value && activeCheckboxesText) {
       loadContent.classList.add("hidden__modal__content");
@@ -86,6 +81,8 @@ export default function openModal() {
         doneBtn.addEventListener("click", function (e) {
           username.value = "";
           email.value = "";
+          username.classList.remove("error-input");
+          email.classList.remove("error-input");
           modalOpen.style.display = "none";
           doneBtn.style.display = "none";
           sendBtn.removeAttribute("disabled", "");
@@ -96,9 +93,34 @@ export default function openModal() {
       console.log("Username:" + email.value);
       console.log("Plan: " + checked_btn.value);
       console.log(activeCheckboxesText());
-      console.log("true");
     } else {
       console.log("false");
     }
   });
+  closeModal.addEventListener("click", function (e) {
+    username.value = "";
+    username.classList.remove("error-input");
+    email.value = "";
+    email.classList.remove("error-input");
+    modalOpen.style.display = "none";
+    doneBtn.style.display = "none";
+    sendBtn.removeAttribute("disabled", "");
+
+    document.body.classList.remove("body__scroll-off");
+  });
+  document.querySelector(".modal__body").addEventListener(
+    "click",
+    (e) => {
+      const modalContent = document.querySelector(".modal__content");
+      if (e.path.indexOf(modalContent) === -1) {
+        username.value = "";
+        email.value = "";
+        modalOpen.style.display = "none";
+        doneBtn.style.display = "none";
+        sendBtn.removeAttribute("disabled", "");
+        document.body.classList.remove("body__scroll-off");
+      }
+    },
+    false
+  );
 }

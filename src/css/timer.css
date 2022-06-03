@@ -1,5 +1,5 @@
 #timer {
-  background: url(/img/bg.png);
+  background: url(../img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -8,7 +8,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  /* display: none;    */
+  display: none;
 }
 
 .timer__container-title {
