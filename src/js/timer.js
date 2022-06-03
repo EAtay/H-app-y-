@@ -1,6 +1,5 @@
 import data from "./config.json" assert { type: "json" };
 export default function timer() {
-  console.log(data)
   let splitDate = data.timerEndDate.split(/\W/);
   const [day, month, year, hour, minutes] = splitDate;
   const dataEnd = new Date(year, month - 1, day, hour, minutes);

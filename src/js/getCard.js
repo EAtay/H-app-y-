@@ -13,6 +13,8 @@ export default function card() {
   const linkAppStore = document.getElementById('gotoappstore');
   const testimonialsCardProfession =
     document.querySelectorAll(".profession__card");
+
+    
   priceCards[0].innerHTML = "$" + standard.price;
   titleCards[0].innerHTML = standard.name;
   priceCards[1].innerHTML = "$" + premium.price;
@@ -23,6 +25,15 @@ export default function card() {
   modalSelectedItems[0].innerHTML = standard.name;
   modalSelectedItems[1].innerHTML = premium.name;
   modalSelectedItems[2].innerHTML = lifetime.name;
+
+  const inputPlan1 = document.getElementById("standard");
+  inputPlan1.setAttribute("value", standard.name);
+  
+  const inputPlan2 = document.getElementById("premium");
+  inputPlan2.setAttribute("value", premium.name);
+  
+  const inputPlan3 = document.getElementById("lifetime");
+  inputPlan3.setAttribute("value", lifetime.name);
 
   testimonialsCardText[0].innerHTML = firstCard.text;
   testimonialsCardAuthor[0].innerHTML = firstCard.name;

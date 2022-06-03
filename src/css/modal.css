@@ -216,6 +216,11 @@
     border-color: #0b76ef;
     background-image: url("../img/select_blue.png");
 }
+.checked__error{
+    display: none;
+    padding-top: 6px;
+    color: #FF5437;
+}
 
 form {
     max-width: 330px;

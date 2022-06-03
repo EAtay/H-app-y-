@@ -499,7 +499,7 @@
                     </svg>
 
                 </div>
-                <form action="" id="form" novalidate>
+                <form action="" id="form-modal" novalidate>
                     <p class="modal__title">
                         Leave a request for the purchase of goods
                     </p>
@@ -513,7 +513,6 @@
                     </div>
                     <div class="modal__btns">
                         <p class="form__title">Your plan?</p>
-                        <form>
                             <div class="radiobtn">
                                 <input type="radio" id="standard" name="drone" value="standard" />
                                 <label for="standard" class="label__standard-color selected_rate"></label>
@@ -528,32 +527,34 @@
                                 <input type="radio" id="lifetime" name="drone" value="lifetime" checked />
                                 <label for="lifetime" class="label__lifetime-color selected_rate"></label>
                             </div>
-                        </form>
                     </div>
                     <div class="modal__faq">
                         <p class="modal__questions">How do you know about our app?</p>
                         <div class="modal__social-networks">
                             <div class="checkbox__container">
                                 <input type="checkbox" class="checkbox__input" id="checkbox__facebook"
-                                    name="checkbox__facebook" value="yes">
+                                    name="checkbox__value" value="yes">
                                 <label class="checkbox__input-label" for="checkbox__facebook">Facebook</label>
                             </div>
                             <div class="checkbox__container">
-                                <input type="checkbox" class="checkbox__input" id="checkbox__inst" name="instagram"
+                                <input type="checkbox" class="checkbox__input" id="checkbox__inst" name="checkbox__value"
                                     value="yes">
                                 <label class="checkbox__input-label" for="checkbox__inst">Insagram</label>
                             </div>
                             <div class="checkbox__container">
-                                <input type="checkbox" class="checkbox__input" id="checkbox__utube" name="youtube"
+                                <input type="checkbox" class="checkbox__input" id="checkbox__utube" name="checkbox__value"
                                     value="yes">
                                 <label class="checkbox__input-label" for="checkbox__utube">Youtube</label>
                             </div>
                             <div class="checkbox__container">
-                                <input type="checkbox" class="checkbox__input" id="checkbox__other" name="other"
+                                <input type="checkbox" class="checkbox__input" id="checkbox__other" name="checkbox__value"
                                     value="yes">
                                 <label class="checkbox__input-label" for="checkbox__other">Other</label>
                             </div>
                         </div>
+                        <span class="checked__error" id="error__text">
+                            choose one of the options
+                        </span>
                         <button class="modal__btn-send" id="submit" type="submit">send</button>
                         <div class="load__content">
                             <svg class="load__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
