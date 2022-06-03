@@ -89,8 +89,8 @@ export default function openModal() {
 
   sendBtn.addEventListener("click", function (e) {
     e.preventDefault();
-    validation(username, 0, "username cannot be blank");
-    validation(email, 1, "email cannot be blank");
+    validation(username, 0, "required field");
+    validation(email, 1, "required field");
 
     if (username.value && email.value && activeCheckboxesText()) {
       errorChecked.style.display = "none";
