@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url(./css/header.css);
+@import url(./css/timer.css);
+@import url(./css/about.css);
+@import url(./css/feature.css);
+@import url(./css/redcontainer.css);
+@import url(./css/technology.css);
+@import url(./css/security.css);
+@import url(./css/change.css);
+@import url(./css/pricing.css);
+@import url(./css/testimonials.css);
+@import url(./css/download.css);
+@import url(./css/faq.css);
+@import url(./css/footer.css);
+@import url(./css/modal.css);
+@import url(./css/global.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+body{
+    margin-top: 90px;
+}

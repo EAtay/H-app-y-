@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  padding-top: 90px;
+  padding: 60px 0 78px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -12,7 +12,7 @@
 }
 
 .timer__container-title {
-  margin: 60px 345px 4px 366px;
+  /* margin: 60px 345px 4px 366px; */
   max-width: 729px;
 }
 

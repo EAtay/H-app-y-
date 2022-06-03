@@ -35,7 +35,7 @@ export default function timer() {
     if (timeDistance < 0) {
       clearInterval(interfal);
       timerDelete.style.display = "none";
-      deleteMarginTop.style.margin = 0;
+      // deleteMarginTop.style.margin = 0;
     }
   }
 }
