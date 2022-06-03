@@ -15,11 +15,8 @@
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.price__card:nth-child(2n) {
-    margin: 0 40px;
+    gap: 20px;
+    justify-content: center;
 }
 
 .price__card {
@@ -29,12 +26,12 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .title__buy-card {
+    margin-top: 50px;
     max-width: 85px;
     height: 24px;
     font-weight: 400;
@@ -45,14 +42,14 @@
 .price {
     font-size: 110px;
     font-weight: 400;
-    line-height: 124px;
+    line-height: 114px;
     letter-spacing: 8px;
 }
 
 .text__card {
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 70px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -60,9 +57,8 @@
 .card__btn {
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 15px;
     letter-spacing: 2px;
-    margin-top: 20px;
     height: 40px;
     width: 129px;
     border-radius: 4px;
@@ -105,6 +101,9 @@
 }
 @media(max-width: 600px) {
     .pricing__top {
+        width: 100%;
+    }
+    .speed__img {
         width: 100%;
     }
 

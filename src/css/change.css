@@ -3,7 +3,7 @@
     transition: .3s;
     display: flex;
     color: #fff;
-    padding: 100px 0;
+    padding: 100px 0 165px; 
     justify-content: center;
 }
 
@@ -32,6 +32,7 @@
 }
 
 .context__frame {
+    margin-top: 8px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -53,7 +54,6 @@
 
 .btn__frame {
     padding-top: 36px;
-    max-width: 600px;
 }
 
 .btn__frame span {
@@ -64,7 +64,6 @@
     height: 49px;
     background: none;
     width: 128px;
-    left: 164px;
     border-radius: 5px;
     font-style: normal;
     font-weight: 400;

@@ -41,35 +41,35 @@
         </div>
     </header>
     <div id="timer">
-        <div class="timer__container-title">
+        <div class="timer-block">
             <h2 class="timer__title">big sale on lifetime plan</h2>
             <p class="timer__context">there is very little left</p>
-        </div>
-        <div class="timer__container">
-            <div class="timer__container-item">
-                <span class="number" id="days">00</span>
-                <p class="timer__text">days</p>
-            </div>
-            <div class="timer__line">|</div>
-            <div class="timer__container-item">
-                <span class="number" id="hours">00</span>
-                <p class="timer__text">hours</p>
-            </div>
-            <div class="timer__line">|</div>
-            <div class="timer__container-item">
-                <span class="number" id="minutes">00</span>
-                <p class="timer__text">minutes</p>
-            </div>
-            <div class="timer__line">|</div>
-            <div class="timer__container-item">
-                <span class="number" id="seconds">00</span>
-                <p class="timer__text">seconds</p>
+            <div class="timer__container">
+                <div class="timer__container-item">
+                    <span class="number" id="days">00</span>
+                    <p class="timer__text">days</p>
+                </div>
+                <div class="timer__line">|</div>
+                <div class="timer__container-item">
+                    <span class="number" id="hours">00</span>
+                    <p class="timer__text">hours</p>
+                </div>
+                <div class="timer__line">|</div>
+                <div class="timer__container-item">
+                    <span class="number" id="minutes">00</span>
+                    <p class="timer__text">minutes</p>
+                </div>
+                <div class="timer__line">|</div>
+                <div class="timer__container-item">
+                    <span class="number" id="seconds">00</span>
+                    <p class="timer__text">seconds</p>
+                </div>
             </div>
         </div>
     </div>
     <section id="about__section">
         <div class="about__container">
-            <div class="left__part about__left">
+            <div class="about__left">
                 <div class="about__logo">
                     <a href="#">
                         <img src="./img/about-logo.svg">
@@ -89,8 +89,8 @@
                     <button class="buy-now__btn__main second__about-btn">read more</button>
                 </div>
             </div>
-            <div id="right__part" class="right__part">
-                <img src="./img/phone.png">
+            <div id="right__part">
+                <img src="./img/phone.png" class="right__part">
             </div>
         </div>
     </section>
@@ -256,7 +256,7 @@
     </section>
     <section id="technology__section">
         <div class="technology__container">
-            <div class="left__part">
+            <div class="technology__part">
                 <h2 class="title__section">
                     technology
                 </h2>
@@ -272,17 +272,17 @@
                     posuere.
                 </p>
             </div>
-            <div class="right__part">
-                <img src="./img/phone1.png" alt="">
+            <div>
+                <img src="./img/phone1.png" alt="" class="technology__img">
             </div>
         </div>
     </section>
     <section id="speed__section">
         <div class="speed__container">
-            <div class="right__part">
-                <img src="./img/phone.png" alt="">
+            <div>
+                <img src="./img/phone.png" alt="" class="speed__img">
             </div>
-            <div class="left__part">
+            <div class="speed__part">
                 <h2 class="title__section">
                     Speed & security
                 </h2>
@@ -513,20 +513,20 @@
                     </div>
                     <div class="modal__btns">
                         <p class="form__title">Your plan?</p>
-                            <div class="radiobtn">
-                                <input type="radio" id="standard" name="drone" value="standard" />
-                                <label for="standard" class="label__standard-color selected_rate"></label>
-                            </div>
+                        <div class="radiobtn">
+                            <input type="radio" id="standard" name="drone" value="standard" />
+                            <label for="standard" class="label__standard-color selected_rate"></label>
+                        </div>
 
-                            <div class="radiobtn">
-                                <input type="radio" id="premium" name="drone" value="premium" />
-                                <label for="premium" class="label-premium-color selected_rate"></label>
-                            </div>
+                        <div class="radiobtn">
+                            <input type="radio" id="premium" name="drone" value="premium" />
+                            <label for="premium" class="label-premium-color selected_rate"></label>
+                        </div>
 
-                            <div class="radiobtn">
-                                <input type="radio" id="lifetime" name="drone" value="lifetime" checked />
-                                <label for="lifetime" class="label__lifetime-color selected_rate"></label>
-                            </div>
+                        <div class="radiobtn">
+                            <input type="radio" id="lifetime" name="drone" value="lifetime" checked />
+                            <label for="lifetime" class="label__lifetime-color selected_rate"></label>
+                        </div>
                     </div>
                     <div class="modal__faq">
                         <p class="modal__questions">How do you know about our app?</p>
@@ -537,18 +537,18 @@
                                 <label class="checkbox__input-label" for="checkbox__facebook">Facebook</label>
                             </div>
                             <div class="checkbox__container">
-                                <input type="checkbox" class="checkbox__input" id="checkbox__inst" name="checkbox__value"
-                                    value="yes">
+                                <input type="checkbox" class="checkbox__input" id="checkbox__inst"
+                                    name="checkbox__value" value="yes">
                                 <label class="checkbox__input-label" for="checkbox__inst">Insagram</label>
                             </div>
                             <div class="checkbox__container">
-                                <input type="checkbox" class="checkbox__input" id="checkbox__utube" name="checkbox__value"
-                                    value="yes">
+                                <input type="checkbox" class="checkbox__input" id="checkbox__utube"
+                                    name="checkbox__value" value="yes">
                                 <label class="checkbox__input-label" for="checkbox__utube">Youtube</label>
                             </div>
                             <div class="checkbox__container">
-                                <input type="checkbox" class="checkbox__input" id="checkbox__other" name="checkbox__value"
-                                    value="yes">
+                                <input type="checkbox" class="checkbox__input" id="checkbox__other"
+                                    name="checkbox__value" value="yes">
                                 <label class="checkbox__input-label" for="checkbox__other">Other</label>
                             </div>
                         </div>
@@ -564,9 +564,6 @@
                                     fill="#7E7E7E" />
                             </svg>
                             <p class="load__text">loading...</p>
-                        </div>
-                        <div class="hidden__btn-done">
-                            <button class="btn__done">done</button>
                         </div>
                     </div>
                 </form>

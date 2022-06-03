@@ -163,25 +163,6 @@
     margin-bottom: 36px;
 }
 
-.hidden__btn-done {
-    display: none;
-    flex-wrap: wrap;
-    width: 45%;
-    margin-bottom: 36px;
-}
-
-.btn__done {
-    font-weight: 400;
-    font-size: 14px;
-    justify-content: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #7E7E7E;
-    width: 100%;
-    border-radius: 4px;
-    background: none;
-}
-
 .checkbox__input {
     position: absolute;
     z-index: -1;
@@ -322,9 +303,11 @@ form {
     }
 }
 
-@media (max-width:438px) {
+@media (max-width:440px) {
     .modal__content {
         padding: 0 10px;
+        margin: 15px;
+        justify-content: center;
     }
 
     .close_modal {
@@ -338,9 +321,5 @@ form {
 
     .js-form {
         width: 90%;
-    }
-
-    .modal__faq {
-        width: 80%;
     }
 }

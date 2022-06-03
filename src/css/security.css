@@ -1,20 +1,24 @@
 #speed__section {
     width: 100%;
     background-color: #F2F2F2;
+    padding-top: 85px;
 }
-
-.speed__container {
+.speed__container{
     max-width: 1200px;
     margin: auto;
-    padding-top: 100px;
-
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
+    padding: 0 100px 0 78px;
 }
-
-#speed__section .right__part {
-    margin-left: 100px;
+.speed__part {
+    max-width: 403px;
+    margin-bottom: 100px;
+}
+.speed__img {
+    margin-left: 20px;
+    transform: translateY(7px);
 }
 
 @media (max-width:1000px) {
@@ -31,5 +35,13 @@
 
     #speed__section .left__part {
         padding: 20px 0 20px;
+    }
+}
+@media (max-width: 440px) {
+    .speed__container {
+        padding: 0 10px 0 10px;
+    }
+    .speed__img {
+        margin-left: 0;
     }
 }

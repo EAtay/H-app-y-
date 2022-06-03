@@ -12,18 +12,21 @@ export default function openModal() {
   let username = document.getElementById("firstname"),
     email = document.getElementById("email"),
     errorMsg = document.querySelectorAll(".input-status");
-    const errorChecked = document.querySelector('.checked__error');
+  const errorChecked = document.querySelector(".checked__error");
   const doneBtn = document.querySelector(".hidden__btn-done");
   const closeModal = document.querySelector(".close__content");
   const checked_btn = document.querySelector('input[name = "drone"]:checked');
   const checkedInputs = document.querySelectorAll(".checkbox__input");
-  const checkedInputsLabel = document.querySelectorAll(".checkbox__input-label");
+  const checkedInputsLabel = document.querySelectorAll(
+    ".checkbox__input-label"
+  );
   const activeCheckboxesText = () => {
     const form = document.getElementById("form-modal");
-    const el = form.elements.checkbox__value
-    const isChecked = Array.from(el).some(x => x.checked);
+    const el = form.elements.checkbox__value;
+    const isChecked = Array.from(el).some((x) => x.checked);
     if (!isChecked) {
       errorChecked.style.display = "block";
+      return false;
     }
     let texts = [];
     checkedInputs.forEach((checkbox, index) => {
@@ -33,14 +36,25 @@ export default function openModal() {
     });
     return texts;
   };
-  buyBtn.addEventListener("click", function (e) {
+
+  const openByBtn = () => {
+    const form = document.getElementById("form-modal");
+    Array.from(form.elements.checkbox__value).forEach(
+      (x) => (x.checked = false)
+    );
+
     modalOpen.style.display = "block";
     document.body.classList.add("body__scroll-off");
+  };
+  buyBtn.addEventListener("click", function (e) {
+    openByBtn()
   });
   standardBtnBuy.addEventListener("click", function (e) {
+    openByBtn()
     selectStandard.checked = true;
   });
   premiumBtnBuy.addEventListener("click", function (e) {
+    openByBtn()
     selectPremium.checked = true;
   });
   function validateEmail(email) {
@@ -69,7 +83,7 @@ export default function openModal() {
       return false;
     } else {
       errorMsg[serial].innerHTML = "";
-      id.classList.remove('error-input');
+      id.classList.remove("error-input");
     }
   };
 
@@ -78,23 +92,21 @@ export default function openModal() {
     validation(username, 0, "username cannot be blank");
     validation(email, 1, "email cannot be blank");
 
-    if (username.value && email.value && activeCheckboxesText) {
+    if (username.value && email.value && activeCheckboxesText()) {
+      errorChecked.style.display = "none";
       loadContent.classList.add("hidden__modal__content");
       setTimeout(() => {
         sendBtn.setAttribute("disabled", "");
         loadContent.classList.remove("hidden__modal__content");
-        doneBtn.style.display = "block";
-        doneBtn.addEventListener("click", function (e) {
-          username.value = "";
-          email.value = "";
-          username.classList.remove("error-input");
-          email.classList.remove("error-input");
-          errorChecked.style.display = "none";
-          modalOpen.style.display = "none";
-          doneBtn.style.display = "none";
-          sendBtn.removeAttribute("disabled", "");
-          document.body.classList.remove("body__scroll-off");
-        });
+
+        username.value = "";
+        email.value = "";
+        username.classList.remove("error-input");
+        email.classList.remove("error-input");
+        errorChecked.style.display = "none";
+        modalOpen.style.display = "none";
+        sendBtn.removeAttribute("disabled", "");
+        document.body.classList.remove("body__scroll-off");
       }, 3000);
 
       const form = document.getElementById("form-modal");
@@ -102,14 +114,13 @@ export default function openModal() {
       const data = {
         username: username.value,
         email: email.value,
-        plans: Array.from(form.elements.drone)
-          .find(x => x.checked)?.value,
+        plans: Array.from(form.elements.drone).find((x) => x.checked)?.value,
         socials: Array.from(form.elements.checkbox__value)
-          .filter(x => x.checked)
-          .map(x => x.value)
-      }
+          .filter((x) => x.checked)
+          .map((x) => x.value),
+      };
 
-      console.log("DATA", data)
+      console.log("DATA", data);
     } else {
       console.log("false");
     }
@@ -133,13 +144,13 @@ export default function openModal() {
       if (e.path.indexOf(modalContent) === -1) {
         username.value = "";
         email.value = "";
-      errorChecked.style.display = "none";
+        errorChecked.style.display = "none";
+        document.body.classList.remove("body__scroll-off");
         username.classList.remove("error-input");
         email.classList.remove("error-input");
         modalOpen.style.display = "none";
         doneBtn.style.display = "none";
         sendBtn.removeAttribute("disabled", "");
-        document.body.classList.remove("body__scroll-off");
       }
     },
     false

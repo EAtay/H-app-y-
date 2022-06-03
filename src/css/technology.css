@@ -8,9 +8,17 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
+    padding: 0 100px 0 78px;
 }
-
+.technology__part {
+    max-width: 403px;
+    margin-bottom: 110px;
+}
+.technology__img {
+    margin-left: 10px;
+}
 .title__of__context {
     font-style: normal;
     font-weight: 400;
@@ -27,7 +35,17 @@
     color: #666666;
 }
 
-.right__part img {
-    max-width: 90%;
-    height: 100%;
+.technology__img {
+    max-width: 376px;
+    height: 544px;
+    transform: translateY(6px);
+}
+@media (max-width: 440px) {
+    .technology__container {
+        padding: 0 10px 0 10px;
+    }
+    .technology__img {
+        width: 100%;
+        margin-left: 0px;
+    }
 }

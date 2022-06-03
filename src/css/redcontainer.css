@@ -1,7 +1,7 @@
 #red__section {
     width: 100%;
     background-color: #FF5437;
-    padding: 100px 0;
+    padding: 80px 0 100px;
     flex-direction: wrap;
     justify-content: center;
     align-items: center;
@@ -9,9 +9,10 @@
 
 .red__container {
     display: flex;
+    margin: auto;
+    max-width: 1040px;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: space-between;
 }
 
 .red__container-item {
@@ -23,6 +24,9 @@
     font-size: 96px;
     font-weight: 400;
     line-height: 96px;
+}
+.red__container-item:nth-child(n + 2) {
+    margin-right: 25px;
 }
 
 .static__context {
@@ -46,5 +50,9 @@
     }
     .red__container-item {
         padding-top: 20px;
-    }  
+    }
+    .red__container-item h3 {
+        /* width: 100%; */
+        font-size: 86px;
+    }
 }
